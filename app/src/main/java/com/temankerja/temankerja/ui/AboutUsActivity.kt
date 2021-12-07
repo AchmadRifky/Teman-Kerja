@@ -2,6 +2,7 @@ package com.temankerja.temankerja.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.temankerja.temankerja.HelperView
 import com.temankerja.temankerja.R
 import com.temankerja.temankerja.databinding.ActivityAboutUsBinding
 
@@ -11,10 +12,14 @@ class AboutUsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAboutUsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setSupportActionBar(findViewById(R.id.toolbar2))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
-        binding.userInclude.tvNavTitle.text = "About Us"
+
+        HelperView.setActionBar(
+            supportActionBar,
+            this,
+            R.layout.actionbar_title_layout,
+            getString(R.string.about)
+        )
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

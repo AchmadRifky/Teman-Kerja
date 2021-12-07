@@ -20,7 +20,6 @@ class NotificationActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar2))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
-        binding.userInclude.tvNavTitle.text = "Notifikasi"
         setupRv()
         viewModel.data.observe(this, {
             if (it.data != null) {

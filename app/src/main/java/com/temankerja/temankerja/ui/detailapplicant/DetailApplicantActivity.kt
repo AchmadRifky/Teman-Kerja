@@ -38,7 +38,6 @@ class DetailApplicantActivity : AppCompatActivity(), View.OnClickListener {
         setSupportActionBar(findViewById(R.id.toolbar2))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
-        binding.userInclude.tvNavTitle.text = "Detail Pelamar"
         StatusBar.changeColor(window, this)
         binding.apply {
             tvFullName.text = fullname

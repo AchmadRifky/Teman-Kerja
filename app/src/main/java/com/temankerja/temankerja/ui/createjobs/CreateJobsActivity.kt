@@ -44,7 +44,6 @@ class CreateJobsActivity : AppCompatActivity(), View.OnClickListener {
         )
         storeRef = storage.reference
 
-        binding.userInclude.tvNavTitle.text = "Lowongan"
         binding.spinnerLokasi.adapter = adapter
         binding.spinnerLokasi.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(

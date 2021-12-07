@@ -16,7 +16,7 @@ import com.temankerja.temankerja.ui.MainActivity
 import com.temankerja.temankerja.ui.signup.SignUpActivity
 import com.temankerja.temankerja.utils.AuthType
 
-class LoginActivity : AppCompatActivity(), View.OnClickListener {
+class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     val db = Firebase.firestore
     private lateinit var userPreference: UserPreference
@@ -26,27 +26,21 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         userPreference = UserPreference(this)
-        binding.let {
-            it.tvDaftar.setOnClickListener(this)
-            it.btnMasuk.setOnClickListener(this)
+
+        binding.apply {
+            tvDaftar.setOnClickListener {
+                val intent = Intent(this@LoginActivity, SignUpActivity::class.java)
+                startActivity(intent)
+            }
+
+            btnMasuk.setOnClickListener {
+                signIn()
+            }
         }
         if(userPreference.getUser().isLogin != false) {
             Intent(this, MainActivity::class.java).apply {
                 startActivity(this)
                 finish()
-            }
-        }
-    }
-
-    override fun onClick(v: View?) {
-        when (v?.id) {
-            R.id.tv_daftar -> {
-                Intent(this, SignUpActivity::class.java).apply {
-                    startActivity(this)
-                }
-            }
-            R.id.btn_masuk -> {
-                signIn()
             }
         }
     }

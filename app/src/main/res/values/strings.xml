@@ -34,6 +34,9 @@
     <string name="kirim">Kirim</string>
     <string name="upload_foto">Upload Foto</string>
     <string name="dot">...</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="about">About</string>
 
     <string-array name="sertifikasi_title">
         <item>Android Developer</item>
