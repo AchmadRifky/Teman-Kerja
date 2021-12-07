@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.temankerja.temankerja">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TemanKerja">
+        <activity
+            android:name=".ui.change.ChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.detailbiodata.DetailBiodataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.success.SuccessRecruitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.success.SuccessRecruit"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detailapplicant.DetailApplicantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.success.SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.resume.ResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.createjobs.CreateJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.applicants.ApplicantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.recruiter.RecruiterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.biodata.BiodataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.detail.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false" />
+        <activity android:name=".ui.signup.SignUpActivity" />
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name=".ui.SplashScreenActivity"
+            android:exported="true"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

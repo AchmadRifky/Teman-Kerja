@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">TemanKerja</string>
+    <string name="desc_wallpaper_screen">Wallpaper Screen</string>
+    <string name="temankerja">TemanKerja</string>
+    <string name="btn_masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="hint_nama_pengguna">Nama Pengguna</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_kata_sandi">Kata Sandi</string>
+    <string name="hint_repassword">Konfirmasi Kata Sandi</string>
+    <string name="register">Register</string>
+    <string name="desc_main">Penyedia Pekerja dan Pekerjaan untuk Lulusan SMP dan SMA</string>
+    <string name="saya_ingin_bekerja">Saya Ingin Bekerja</string>
+    <string name="saya_ingin_memasang_lowongan">Saya Ingin Memasang Lowongan</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="image_home">Image Home</string>
+    <string name="design_grafis">Design Grafis</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis turpis. Nam semper leo vitae nunc rutrum venenatis.</string>
+    <string name="rp_500_000">Rp 500.000</string>
+    <string name="informasi">Informasi</string>
+    <string name="sertifikasi">Sertifikasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="daftar_lowongan">Daftar Lowongan</string>
+    <string name="pt_sinestesia">PT. Sinestesia</string>
+    <string name="selamat_anda_di_terima_sebagai_software_engineer_di_google">Selamat, Anda di terima sebagai Software Engineer di Google</string>
+    <string name="image_applicant">Image Applicant</string>
+    <string name="ceritakan_tentang_dirimu">Ceritakan tentang dirimu ...</string>
+    <string name="kirim">Kirim</string>
+    <string name="upload_foto">Upload Foto</string>
+    <string name="dot">...</string>
+
+    <string-array name="sertifikasi_title">
+        <item>Android Developer</item>
+        <item>Website Developer with PHP</item>
+        <item>Cooking</item>
+        <item>Desain Grafis</item>
+    </string-array>
+    <string-array name="sertifikasi_desc">
+        <item>lorem ipsum desc</item>
+        <item>lorem ipsum desc</item>
+        <item>lorem ipsum desc</item>
+        <item>lorem ipsum desc</item>
+    </string-array>
+    <string-array name="sertifikasi_photo">
+        <item>@drawable/android</item>
+        <item>@drawable/php</item>
+        <item>@drawable/cooking</item>
+        <item>@drawable/designer</item>
+    </string-array>
+    <string-array name="spinner_lokasi">
+        <item>Pilih Lokasi</item>
+        <item>Kota Jakarta Barat</item>
+        <item>Kota Jakarta Pusat</item>
+        <item>Kota Jakarta Selatan</item>
+        <item>Kota Jakarta Timur</item>
+        <item>Kota Jakarta Utara</item>
+        <item>Kabupaten Kepulauan Seribu</item>
+        <item>Kota Bogor</item>
+        <item>Kabupaten Bogor</item>
+        <item>Kota Depok</item>
+        <item>Kota Tangerang</item>
+        <item>Kota Tangerang Selatan</item>
+        <item>Kabupaten Tangerang</item>
+        <item>Kota Bekasi</item>
+        <item>Kabupaten Bekasi</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_header"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/tv_sidebar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wahyu Ilahi"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_sidebar_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wahyu_ilahi_11@gmaiil.com"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/white" />
+
+</LinearLayout>
