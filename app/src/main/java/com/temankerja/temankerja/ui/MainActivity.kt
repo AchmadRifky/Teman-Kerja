@@ -8,7 +8,7 @@ import com.temankerja.temankerja.R
 import com.temankerja.temankerja.databinding.ActivityMainBinding
 import com.temankerja.temankerja.ui.recruiter.RecruiterActivity
 import com.temankerja.temankerja.ui.user.UserActivity
-
+//sulton
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
