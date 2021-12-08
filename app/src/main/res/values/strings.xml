@@ -37,6 +37,17 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="about">About</string>
+    <string name="fullname">Nama Lengkap</string>
+    <string name="address">Alamat</string>
+    <string name="no_ktp">No KTP</string>
+    <string name="no_telepon">No Telepon</string>
+    <string name="keterampilan">Keterampilan</string>
+    <string name="save">Save</string>
+    <string name="nama_perusahaan">Nama Perusahaan</string>
+    <string name="jenis_perusahaan">Jenis Perusahaan</string>
+    <string name="posisi_pekerjaan">Posisi Pekerjaan</string>
+    <string name="gaji">Gaji</string>
+    <string name="jadwal_kerja">Jadwal Kerja</string>
 
     <string-array name="sertifikasi_title">
         <item>Android Developer</item>

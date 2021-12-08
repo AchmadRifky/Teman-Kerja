@@ -18,12 +18,14 @@
         android:layout_height="0dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/user_include">
+        app:layout_constraintTop_toBottomOf="@id/user_include"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-74dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:paddingBottom="150dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="150dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/img_profile"
@@ -40,8 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/upload_foto"
                 android:fontFamily="@font/inter_bold"
+                android:text="@string/upload_foto"
                 android:textColor="@color/blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -50,153 +52,153 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_company_name"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Nama Perusahaan"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_upload">
+                app:layout_constraintTop_toBottomOf="@+id/tv_upload">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_company_name_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nama_perusahaan"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_company_category"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Jenis Perusahaan"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_company_name">
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tv_company_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_company_name">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_company_category_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jenis_perusahaan"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_posisi"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Posisi Pekerjaan"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_company_category">
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tv_company_category"
+                app:layout_constraintStart_toStartOf="@+id/tv_company_category"
+                app:layout_constraintTop_toBottomOf="@+id/tv_company_category">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_posisi_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/posisi_pekerjaan"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Spinner
                 android:id="@+id/spinner_lokasi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_spinner"
                 android:spinnerMode="dropdown"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_posisi"
+                app:layout_constraintStart_toStartOf="@+id/tv_posisi"
                 app:layout_constraintTop_toBottomOf="@+id/tv_posisi" />
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_gaji"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Gaji"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_lokasi"
+                app:layout_constraintStart_toStartOf="@+id/spinner_lokasi"
                 app:layout_constraintTop_toBottomOf="@+id/spinner_lokasi">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_gaji_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/gaji"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_jadwal_kerja"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Jadwal Kerja"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tv_gaji"
+                app:layout_constraintStart_toStartOf="@+id/tv_gaji"
                 app:layout_constraintTop_toBottomOf="@+id/tv_gaji">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_jadwal_kerja_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jadwal_kerja"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_deskripsi"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Theme.TemanKerja.TextInputLayoutStyle"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:scrollbarAlwaysDrawVerticalTrack="true"
-                android:scrollbars="vertical"
-                android:hint="Deskripsi"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tv_jadwal_kerja"
+                app:layout_constraintStart_toStartOf="@+id/tv_jadwal_kerja"
                 app:layout_constraintTop_toBottomOf="@+id/tv_jadwal_kerja">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:minLines="5"
                     android:id="@+id/tv_deskripsi_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="100dp"
+                    android:gravity="top"
+                    android:hint="@string/keterampilan"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    android:overScrollMode="always"
+                    android:padding="3dp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:text="" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+
             <Button
                 android:id="@+id/btn_post"
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/btn_rounded"
                 android:text="Post"
                 app:backgroundTint="@color/purple"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_deskripsi"
+                app:layout_constraintStart_toStartOf="@+id/tv_deskripsi"
                 app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi" />
 
 

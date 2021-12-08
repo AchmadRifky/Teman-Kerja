@@ -48,35 +48,34 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_fullname"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
+                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Nama Lengkap"
+                app:boxBackgroundColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_upload">
+                app:layout_constraintTop_toBottomOf="@+id/tv_upload">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tv_fullname_data"
+                    android:id="@+id/tv_data_fullname"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fullname"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <RadioGroup
                 android:id="@+id/rg_gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_fullname"
+                app:layout_constraintStart_toStartOf="@+id/tv_fullname"
                 app:layout_constraintTop_toBottomOf="@+id/tv_fullname">
 
 
@@ -105,102 +104,104 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_address"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Alamat"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="7dp"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tv_fullname"
+                app:layout_constraintStart_toStartOf="@+id/tv_fullname"
                 app:layout_constraintTop_toBottomOf="@+id/rg_gender">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_address_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_no_ktp"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:hint="No KTP"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginTop="7dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_address"
+                app:layout_constraintStart_toStartOf="@+id/tv_address"
                 app:layout_constraintTop_toBottomOf="@+id/tv_address">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_no_ktp_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/no_ktp"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_no_telp"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:hint="No Telepon"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginTop="7dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_no_ktp"
+                app:layout_constraintStart_toStartOf="@+id/tv_no_ktp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_no_ktp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_no_telp_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/no_telepon"
+                    android:textColor="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tv_skills"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="match_parent"
+                style="@style/Theme.TemanKerja.TextInputLayoutStyle"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="120dp"
-                android:hint="Keterampilan"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_no_telp"
+                app:layout_constraintStart_toStartOf="@+id/tv_no_telp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_no_telp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tv_skills_data"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="100dp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    android:overScrollMode="always"
+                    android:padding="3dp"
+                    android:hint="@string/keterampilan"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:text="" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded"
+                android:text="@string/save"
+                android:layout_marginTop="10dp"
+                app:backgroundTint="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/tv_skills"
+                app:layout_constraintStart_toStartOf="@+id/tv_skills"
+                app:layout_constraintTop_toBottomOf="@+id/tv_skills" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/btn_save"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_rounded"
-        android:text="Save"
-        app:backgroundTint="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
