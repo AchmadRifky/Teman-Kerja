@@ -19,11 +19,5 @@ class AboutUsActivity : AppCompatActivity() {
             R.layout.actionbar_title_layout,
             getString(R.string.about)
         )
-
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
     }
 }
