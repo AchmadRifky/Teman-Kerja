@@ -42,7 +42,7 @@ class DetailApplicantActivity : AppCompatActivity(), View.OnClickListener {
         binding.apply {
             tvFullName.text = fullname
             tvLoc.text = "Jakarta, Indonesia"
-            tvGender.text = "${gender} / 17"
+            tvGender.text = "${gender}"
             tvResume.text = resume
             if(photo!=""){
                 Glide.with(this@DetailApplicantActivity)
@@ -51,6 +51,20 @@ class DetailApplicantActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
         binding.btnApply.setOnClickListener(this)
+
+        viewModel.let {
+            it.getDetailApplication()
+            it.dataUsers.observe(this, {
+                if(it.e==null) {
+                    binding.apply {
+
+                        tvNoKtp.text = it?.data?.noKtp
+                        tvNoTelp.text = it?.data?.phone
+                        tvKeterampilan.text = it?.data?.skills
+                    }
+                }
+            })
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
