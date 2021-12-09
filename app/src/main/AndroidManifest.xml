@@ -21,12 +21,6 @@
         <activity
             android:name=".ui.user.detailbiodata.DetailBiodataActivity"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".ui.success.SuccessRecruitActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".ui.success.SuccessRecruit"-->
-<!--            android:exported="false" />-->
         <activity
             android:name=".ui.detailapplicant.DetailApplicantActivity"
             android:exported="false" />

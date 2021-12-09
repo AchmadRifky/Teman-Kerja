@@ -92,12 +92,12 @@
                 android:id="@+id/header_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="Resume"
+                android:layout_marginTop="10dp"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/cardView"
-                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+                app:layout_constraintStart_toStartOf="@+id/cardView3"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
@@ -129,41 +129,24 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/header_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/inter_bold"
-                android:text="Informasi Tambahan"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/cardView2"
-                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="100dp"
                 android:elevation="16dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/header_info"
-                app:layout_constraintVertical_bias="0.0">
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:padding="16dp">
 
                     <TextView
@@ -171,87 +154,74 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter_bold"
-                        android:text="Biodata"
+                        android:text="No. KTP"
                         android:textSize="14dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/tv_biodata"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_no_ktp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter_regular"
-                        android:text="Lihat >"
+                        android:text="..."
                         android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="@+id/textView7"
                         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-                    <TextView
-                        android:id="@+id/header_company_size"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_bold"
-                        android:text="Riwayat Pendidikan"
-                        android:textSize="14dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/tv_riwayat_pendidikan"
+                        android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_regular"
-                        android:text="Lihat >"
-                        android:textSize="14dp"
-                        app:layout_constraintStart_toStartOf="@+id/header_company_size"
-                        app:layout_constraintTop_toBottomOf="@+id/header_company_size" />
-
-                    <TextView
-                        android:id="@+id/header_work_schedule"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:fontFamily="@font/inter_bold"
-                        android:text="Penghargaan"
+                        android:text="No. Telp"
                         android:textSize="14dp"
-                        app:layout_constraintStart_toStartOf="@+id/tv_biodata"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_biodata" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_no_ktp" />
 
                     <TextView
-                        android:id="@+id/tv_penghargaan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_regular"
-                        android:text="Lihat >"
-                        android:textSize="14dp"
-                        app:layout_constraintStart_toStartOf="@+id/header_work_schedule"
-                        app:layout_constraintTop_toBottomOf="@+id/header_work_schedule" />
-
-                    <TextView
-                        android:id="@+id/header_company_type"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:fontFamily="@font/inter_bold"
-                        android:text="Riwayat Pendidikan"
-                        android:textSize="14dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/tv_riwayat_pendidikan"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_riwayat_pendidikan" />
-
-                    <TextView
-                        android:id="@+id/tv_jenis_perusahaan"
+                        android:id="@+id/tv_no_telp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter_regular"
-                        android:text="Lihat >"
+                        android:text="..."
                         android:textSize="14dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/header_company_type"
-                        app:layout_constraintTop_toBottomOf="@+id/header_company_type" />
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView8"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Keterampilan"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_no_telp" />
+
+                    <TextView
+                        android:id="@+id/tv_keterampilan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="..."
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView9"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
